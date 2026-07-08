@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.hero,
+.content {
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.hero {
+  flex: 2;
+  background: #0f766e;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.content {
+  flex: 1;
+  background: #fde68a;
+  color: #111827;
+  font-size: 1rem;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .hero {
+    font-size: 1rem;
+    background: #7c3aed;
+  }
+
+  .content {
+    font-size: 0.95rem;
+    background: #fca5a5;
+  }
+}

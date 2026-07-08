@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2ff;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header,
+footer {
+  background: #4f46e5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.content-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex: 1;
+  padding: 20px;
+  gap: 20px;
+}
+
+.main-content {
+  flex: 2;
+  background: white;
+  padding: 20px;
+}
+
+.sidebar {
+  flex: 1;
+  background: #dbeafe;
+  padding: 20px;
+}
+
+@media (max-width: 700px) {
+  .content-area {
+    flex-direction: column;
+  }
+}

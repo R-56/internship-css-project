@@ -1,0 +1,62 @@
+:root {
+  --primary: #2563eb;
+  --accent: #f59e0b;
+  --bg: #f8fafc;
+  --text: #111827;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: var(--primary);
+  color: white;
+}
+
+.site-header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+.hero-section,
+.skills-section,
+.projects-section,
+.contact-section {
+  padding: 30px;
+}
+
+.skill-grid,
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.skill-card,
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .skill-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}

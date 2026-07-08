@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f3f4f6;
+}
+
+.loader {
+  width: 70px;
+  height: 70px;
+  background: #3b82f6;
+  border-radius: 12px;
+  animation: moveBox 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes moveBox {
+  from {
+    transform: translateX(-120px);
+  }
+  to {
+    transform: translateX(120px);
+  }
+}
